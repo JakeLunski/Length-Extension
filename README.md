@@ -8,11 +8,11 @@ In this project, I successfully implemented a length extension attack to modify 
 Challenges Faced
 ----------------
 Understanding Padding: The most challenging part of the project was understanding how padding works in the SHA-256 algorithm and ensuring it was correctly calculated based on the message length and the secret key length.
+
 Maintaining Hash State: It was important to initialize the hash with the correct internal state derived from the original token, so the new token would be valid after appending the UnlockSafes command.
 
-
 The main parts of the script are as follows:
-
+--------------------------------------------
 URL Class:
     The URL class was used to parse the URL into the prefix, token, and suffix. This class allowed me to easily manipulate and print the modified URL after performing the length extension attack.
 
